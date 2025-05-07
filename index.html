@@ -1,18 +1,16 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section style="text-align: center; padding: 2rem;">
+  <img src="/images/logo.jpg" style="width: 100%; max-height: 400px; object-fit: cover;" />
+  <h1>Welcome to Golden Mom Life</h1>
+  <p>Your safe space for modern motherhood, creativity & growth 💛</p>
+  <a href="/blog">Read the Blog →</a>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<section style="padding: 2rem;">
+  <h2>About Me</h2>
+  <p>Hi, I'm [Your Name]! I'm a mom on a mission to empower others with stories, tools, and self-care strategies.</p>
+</section>
