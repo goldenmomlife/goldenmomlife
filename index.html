@@ -2,15 +2,172 @@
 layout: default
 title: Home
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golden Mom Life</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8e1;
+      color: #2b2b2b;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #ffd600;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      background: #fff8e1;
+      padding: 0.5em 1em;
+      border-radius: 10px;
+    }
+    section {
+      padding: 2em;
+      max-width: 960px;
+      margin: auto;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3em;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 12px;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+    }
+    .card {
+      background: white;
+      padding: 1em;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .card h3 {
+      margin-top: 1em;
+    }
+    .card p {
+      margin: 0.5em 0 1em;
+    }
+    .btn {
+      background: #ffd600;
+      color: #2b2b2b;
+      border: none;
+      padding: 0.75em 1.5em;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GOLDEN MOM LIFE</h1>
+    <nav>
+      <a href="/blog/">BLOG</a>
+      <a href="/store">STORE</a>
+      <a href="/contact">CONTACT</a>
+    </nav>
+  </header>
 
-<section style="text-align: center; padding: 2rem;">
-  <img src="/images/logo.png" style="width: 100%; max-height: 400px; object-fit: cover;" />
-  <h1>Welcome to Golden Mom Life</h1>
-  <p>Your safe space for modern motherhood, creativity & growth 💛</p>
-  <a href="/blog">Read the Blog →</a>
-</section>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome, Golden Mom!</h2>
+      <p>We’re a pack of dog moms who know that raising a golden retriever is both a joy and a journey...</p>
+      <p><strong>Golden Moments start here.</strong></p>
+      <p>Want early access to blog posts, golden retriever hacks, and exclusive dog mom goodies? Join us and get the Golden Support you’ve always needed in your journey. See you on the inside!</p>
+      <a href="/subscribe" class="btn">JOIN THE PACK</a>
+    </div>
+    <img src="assets/images/golden-mom.jpg" alt="Golden Mom and Dog" />
+  </section>
 
-<section style="padding: 2rem;">
-  <h2>About Me</h2>
-  <p>Hi, I'm [Your Name]! I'm a mom on a mission to empower others with stories, tools, and self-care strategies.</p>
-</section>
+  <section class="card-grid">
+    <div class="card">
+      <img src="assets/images/book.jpg" alt="Golden Mom Book">
+      <h3>The Ultimate Puppy Playbook</h3>
+      <p>Everything you need to raise a happy, healthy Golden retriever. Trusted by thousands of new Golden moms.</p>
+      <a href="/book" class="btn">BUY NOW</a>
+    </div>
+    <div class="card">
+      <img src="assets/images/community.jpg" alt="Join the Pack">
+      <h3>Join the Golden Mom Pack!</h3>
+      <p>Exclusive tips, pup stories, and a community that gets it.</p>
+      <a href="/subscribe" class="btn">JOIN</a>
+    </div>
+    <div class="card">
+      <img src="assets/images/store.jpg" alt="Golden Retriever Store">
+      <h3>The #1 Store for Golden Retrievers</h3>
+      <p>Handpicked toys, grooming essentials and more—delivered with love.</p>
+      <a href="/store" class="btn">EXPLORE</a>
+    </div>
+  </section>
+
+  <section>
+    <h3>CHECK OUT OUR BLOG ...</h3>
+    <div class="card-grid">
+      <div class="card">
+        <img src="assets/images/blog1.jpg" alt="Blog post">
+        <h3>Your Golden’s First Year</h3>
+        <p>Real talk for new Golden moms navigating the chaos and the cuddles.</p>
+        <a href="/blog/first-year" class="btn">READ MORE</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/blog2.jpg" alt="Blog post">
+        <h3>10 Secrets Every Retriever Mom Should Know</h3>
+        <p>Training tricks and health hacks for a happy, well-behaved pup.</p>
+        <a href="/blog/secrets" class="btn">READ MORE</a>
+      </div>
+      <div class="card">
+        <img src="assets/images/blog3.jpg" alt="Blog post">
+        <h3>Groom, Glow, Repeat</h3>
+        <p>Easy feel-good rituals to pamper your pup—and yourself.</p>
+        <a href="/blog/groom-glow" class="btn">READ MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>LET'S CONNECT</p>
+    <p>
+      <a href="https://instagram.com/golden.mom.life" target="_blank">Instagram</a> |
+      <a href="#" target="_blank">Facebook</a> |
+      <a href="#" target="_blank">YouTube</a> |
+      <a href="#" target="_blank">Pinterest</a>
+    </p>
+    <p>© Copyright @GoldenMomLife Inc</p>
+  </footer>
+</body>
+</html>
