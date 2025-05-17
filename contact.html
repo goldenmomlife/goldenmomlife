@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Golden Mom Life</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papnm5wuvv6Z5IQfU2gfa4NIMjvKJdM7g6n51aQZHL4MKMe6AnuJpNU+TwvLnoZTx66aIcNS5lmBF23Dfn6q3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: goldenrod;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    a {
+      color: goldenrod;
+      text-decoration: none;
+    }
+
+    ul.socials {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    ul.socials li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    ul.socials li i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Golden Mom Life 💛</h1>
+
+  <form action="https://formsubmit.co/support@goldenmomlife.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <input type="hidden" name="_subject" value="[Contact-Us] New message from Golden Mom Life Contact Form">
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p>Prefer socials? Connect with us:</p>
+  <ul class="socials">
+    <li>
+      <a href="https://instagram.com/golden.mom.life" target="_blank">
+        <i class="fab fa-instagram"></i>Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://pinterest.com/goldenmomlife" target="_blank">
+        <i class="fab fa-pinterest"></i>Pinterest
+      </a>
+    </li>
+    <li>
+      <a href="https://facebook.com/goldenmomlife" target="_blank">
+        <i class="fab fa-facebook"></i>Facebook
+      </a>
+    </li>
+  </ul>
+</body>
+</html>
